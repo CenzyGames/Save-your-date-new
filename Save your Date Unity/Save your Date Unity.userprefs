@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SpritesAndBones\Scripts\Skin2D.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="D:\Unity Projects\Default Project version - 2\Noodle Slurp\Assets\GyroscopeController.cs">
     <Files>
-      <File FileName="Assets\SpritesAndBones\Scripts\Skin2D.cs" Line="149" Column="73" />
+      <File FileName="D:\Unity Projects\Default Project version - 2\Noodle Slurp\Assets\GyroscopeController.cs" Line="42" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
