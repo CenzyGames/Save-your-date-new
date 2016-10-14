@@ -1,33 +1,32 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using Facebook.Unity;
+using System.Collections.Generic;
 using System.Collections;
 
-public class MenuController : MonoBehaviour {
+public class MenuController : MonoBehaviour
+{
 
 	public GameObject ExitMenu;
 	public GameObject SoundOn;
-	public GameObject SoundOff;
-	bool leaderShow;
+    public GameObject SoundOff;
+
 
 	// Use this for initialization
 	void Start () 
 	{
-		if(ExitMenu!=null)
+        if (ExitMenu!=null)
 		{
-			ExitMenu = GameObject.Find("ExitMenu");
 			ExitMenu.SetActive(false);
 		}
 		if(SoundOn!=null)
 		{
-			SoundOn = GameObject.Find("SoundOn");
 			SoundOn.SetActive(true);
 		}
 		if(SoundOff!=null)
-		{
-			SoundOff = GameObject.Find("SoundOff");
+		{			
 			SoundOff.SetActive(false);
 		}
-
-		leaderShow = false;
 	}
 	
 	// Update is called once per frame
@@ -60,7 +59,8 @@ public class MenuController : MonoBehaviour {
 
 	public void PlayGame()
 	{
-		Application.LoadLevel("Gameplay");
+        LevelManager.instance.BeginPlay();
+        SceneManager.LoadScene("Gameplay");
 	}
 
 	public void SoundOnOff()
@@ -75,29 +75,7 @@ public class MenuController : MonoBehaviour {
 		}
 	}
 
-	public void LeaderBoardController()
-	{
-		if(leaderShow == false)
-		{
-			LeaderboardShow();
-		}
-		else
-		{
-			LeaderboardHide();
-		}
-	}
-
 	void LeaderboardShow()
-	{
-
-	}
-
-	void LeaderboardHide()
-	{
-		
-	}
-
-	public void FacebookLogin()
 	{
 
 	}
